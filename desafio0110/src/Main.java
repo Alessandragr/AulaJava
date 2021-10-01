@@ -43,7 +43,8 @@ public class Main {
             break;
             case 2:
                 System.out.println("============= Cálculo IOF =============");
-                double taxa2 = valorIof();
+                char operacaoValida = operacaoIof();
+                double taxa2 = valorIof(operacaoValida);
                 calculoIof += taxa2;
                 System.out.printf("\nO valor da taxa de IOF foi  %.2f\n\n", taxa2);
             break;
@@ -86,8 +87,6 @@ public class Main {
             
             if(resp == 'C' || resp == 'S'|| resp=='M'){
                 operacao = resp;
-                valorIof();
-
             }
             else{
                 System.out.println("Opção invalida! Digite uma opção válida");
@@ -103,7 +102,8 @@ public class Main {
         double taxa = calc.calculoIss(valor);
         return taxa;
     }
-    static double valorIof(){
+    static double valorIof(char operacao){
+        
         System.out.print("Digite o valor a ser taxado: ");
         double valor2  = Double.parseDouble(scan.nextLine());
         double taxa = calc.calculoIof(valor2, operacao);

@@ -42,7 +42,7 @@ public class CadastroPessoas {
         pf.setCpf(Integer.parseInt(scan.nextLine()));
         pf.setCodigo(random.nextInt(100));
         pessoas[i] = pf;
-        System.out.printf("Olá, %s %s!\n Seus dados são: \nIdade: %d\nRG: %d\nCPF: %d\nCódigo: %d\n", pessoas[i].getNome(), pessoas[i].getSobrenome(), pessoas[i].getIdade(), pessoas[i].getRg(), pessoas[i].getCpf(), pessoas[i].getCodigo());
+        System.out.printf("Olá, %s %s!\nSeus dados são: \nIdade: %d\nRG: %d\nCPF: %d\nCódigo: %d\n", pessoas[i].getNome(), pessoas[i].getSobrenome(), pessoas[i].getIdade(), pessoas[i].getRg(), pessoas[i].getCpf(), pessoas[i].getCodigo());
     }
     
     scan.close();

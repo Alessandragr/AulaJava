@@ -1,22 +1,25 @@
 public class contaCorrente {
-    private byte agencia;
-    private byte numero;
-    private byte codigo;
+    private int agencia;
+    private int numero;
+    private int codigo;
     private double saldo;
 
-    public void setAgencia(byte agencia) {
+    public void setAgencia(int agencia) {
         this.agencia = agencia;
     }
-    public byte getAgencia(){
+    public int getAgencia(){
         return this.agencia;
     }
-    public void setNumero (byte numero) {
+    public void setNumero (int numero) {
         this.numero = numero;
     }
-    public byte getNumero() {
+    public int getNumero() {
         return this.numero;
     }
-    public byte setCodigo() {
+    public void setCodigo(int codigo) {
+        this.codigo = codigo;
+    }
+    public int getCodigo () {
         return this.codigo;
     }
     public void setSaldo (double saldo) {

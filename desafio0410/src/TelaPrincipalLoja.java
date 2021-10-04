@@ -1,4 +1,4 @@
-public class TelaPrincipal {
+public class TelaPrincipalLoja {
     public static void main(String[] args) {
         Produto p = new Produto();
 

@@ -26,9 +26,27 @@ public class Universidade {
             System.out.println("Informe o bonus: ");
             c.setBonus(Double.parseDouble(scan.nextLine()));
 
-            System.out.printf("Olá, %s %s. Você está registrado na matrícula: %d e é coordenador do %s e do curso %s. Seu salário e bonus são %.2f %.2f, respectivamente.", c.getNome(), c.getSobrenome(), c.getMatricula(), c.getDepartamento(), c.getCursoCoordenado(), c.getSalario(), c.getBonus());
+            Double aumento = (c.getBonus()/100)*c.getSalario();
 
-        } else if(opcao==2) {
+            System.out.printf("Olá, %s %s. Você está registrado na matrícula: %d e é coordenador do %s e do curso %s. Seu salário e bonus são %.2f %.2f, respectivamente.", c.getNome(), c.getSobrenome(), c.getMatricula(), c.getDepartamento(), c.getCursoCoordenado(), c.getSalario(), aumento);
+
+        } 
+        else if (opcao == 2) {
+
+            System.out.println("Informe o nome: ");
+            f.setNome(scan.nextLine());
+            System.out.println("Informe o sobrenome: ");
+            f.setSobrenome(scan.nextLine());
+            System.out.println("Informe a matrícula: ");
+            f.setMatricula(Integer.parseInt(scan.nextLine()));
+            System.out.println("Informe o departamento: ");
+            f.setDepartamento(scan.nextLine());
+            System.out.println("Informe o salário: ");
+            f.setSalario(Double.parseDouble(scan.nextLine()));
+
+            System.out.printf("Olá %s %s. Você trabalha no %s sob matrícula %d. Seu salário é R$ %.2f", f.getNome(), f.getSobrenome(), f.getDepartamento(), f.getMatricula(), f.getSalario());
+        }
+        else if(opcao==3) {
             System.out.println("Informe o nome: ");
             a.setNome(scan.nextLine());
             System.out.println("Informe o sobrenome: ");
@@ -49,7 +67,7 @@ public class Universidade {
     }
     static void menu(){
         System.out.println("#### Cadastro ####\n");
-        System.out.println("1 - para Coordenador\n2 - para aluno\nInsira sua opção:");
+        System.out.println("1 - para Coordenador\n2 - para funcionario \n3 - para aluno\nInsira sua opção:");
     }
     
 }

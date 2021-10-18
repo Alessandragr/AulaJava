@@ -1,5 +1,5 @@
 public class Aluno {
-    
+
     private String nomeCompleto;
     private byte idade;
     private int matricula;
@@ -24,7 +24,8 @@ public class Aluno {
     }
     @Override
     public String toString() {
-        String objeto = this.nomeCompleto;
+        String objeto = this.nomeCompleto + " " + 
+        this.idade + " " + this.matricula;
         return objeto;
     }
 

@@ -19,12 +19,14 @@ public class ContaCorrente {
         return valorFinal;
     }
     public double deposito(double valorDeposito) {
-        double valorAposDeposito = valorFinal;
+        double valorAposDeposito += valorFinal;
         return valorAposDeposito;
     }
     @Override
     public String toString() {
-        System.out.printf("Código do cliente: %d\nValor do depósito: %.2f\nValor do saque: %.2f");
-        return super.toString();
+        
+        return "Código do cliente: " + " " + this.codigoCliente + 
+                "\nValor do depósito :" + " " + this.deposito + 
+                "\nValor do saque: " + this.saque;
     }
 }

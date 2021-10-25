@@ -26,32 +26,33 @@ public class Main {
             } catch (NumberFormatException exception) {
                 System.out.println(exception.getMessage());
                 System.out.println("Somente números inteiros são aceitos!");
+                opcao=-1;
             }
             if (opcao<0 || opcao >4) {
                 System.out.println("Opção inválida!");
             }
-        } while(opcao<0 || opcao>5); // erro
+        } while(opcao<0 || opcao>5);
             
             int a = ler_numero("Informe o primeiro número: ");
             int b = ler_numero("Informe o segundo número: ");
             
         switch (opcao) {
             case 1:
-                resultado = Calculo.soma(a, b);
+                resultado = calculo.soma(a, b);
                 break;
             case 2:
-                resultado = Calculo.subtracao(a, b); // não consegui usar cálculo.
+                resultado = calculo.subtracao(a, b); // não consegui usar cálculo.
                 break;
             case 3:
-                resultado = Calculo.multiplicacao(a, b);
+                resultado = calculo.multiplicacao(a, b);
                 break;
             case 4:
-            resultado = Calculo.divisao(a, b);
+            resultado = calculo.divisao(a, b);
             break;
             default:
             System.out.println("Encerrando o programa!");
             break;
-        } System.out.printf("O Resultado final é: %d", resultado); // não consegui dar return        
+        } System.out.printf("O Resultado final é: %d", resultado);       
     }
 
 }

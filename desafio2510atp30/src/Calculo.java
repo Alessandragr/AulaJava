@@ -1,10 +1,10 @@
 public class Calculo {
     
-    static public int soma(int a, int b) {
+    public int soma(int a, int b) {
         int soma = a + b;
         return soma;
     }
-    static public int subtracao( int a, int b) {
+    public int subtracao( int a, int b) {
         int subtracao;
         if(a>b) {
         subtracao = a - b;
@@ -13,11 +13,11 @@ public class Calculo {
         }
         return subtracao;
     }
-    static public int multiplicacao (int a, int b) {
+    public int multiplicacao (int a, int b) {
         int multiplicacao = a * b;
         return multiplicacao;
     }
-    static public int divisao(int a, int b) {
+    public int divisao(int a, int b) {
         int divisao=0;
         try {
             divisao= a / b;  

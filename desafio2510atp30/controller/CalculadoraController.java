@@ -1,4 +1,4 @@
-public class Calculo {
+public class CalculadoraController {
     
     public int soma(int a, int b) {
         int soma = a + b;
@@ -19,12 +19,14 @@ public class Calculo {
     }
     public int divisao(int a, int b) {
         int divisao=0;
+        if (b==0) {
         try {
             divisao= a / b;  
         } catch(ArithmeticException exception) {
         System.out.println(exception.getMessage());
         System.out.println("Erro! O dividendo é zero!");
         } 
+        }
         return divisao;
     }
 }

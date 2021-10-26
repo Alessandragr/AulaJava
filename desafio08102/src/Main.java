@@ -12,7 +12,7 @@ public class Main {
         
         desk.fonte = "550W";
         desk.tamanhoGabinete = "60cm";
-        desk.monitorExterno = "25 Polegadas";
+        desk.monitorExterno = "25\"";
         desk.discoRigido = "1 TB SSD";
         desk.memoriaRam = "16GB";
         desk.processador = "i9 - 11° Geração";

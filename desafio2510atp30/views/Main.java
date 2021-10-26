@@ -41,7 +41,7 @@ public class Main {
                 resultado = calculo.soma(a, b);
                 break;
             case 2:
-                resultado = calculo.subtracao(a, b); // não consegui usar cálculo.
+                resultado = calculo.subtracao(a, b);
                 break;
             case 3:
                 resultado = calculo.multiplicacao(a, b);
